@@ -1,0 +1,39 @@
+.info {
+	position: relative;
+	font-size: 18px;
+
+	&--map,
+	&--tel {
+		padding-left: 35px;
+
+		&::before {
+			content: '';
+
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 21px;
+			height: 21px;
+			transform: translate(0%, -50%);
+
+			background: no-repeat;
+            background-position: center;
+		}
+	}
+	&--map::before {
+		background: url('./../img/map.svg') no-repeat;
+	}
+
+	&--tel::before {
+		background: url('./../img/phone-call.svg') no-repeat;
+	}
+
+	@include mediaTablet {
+		font-size: 14px;
+
+		&--map,
+		&--tel {
+			padding-left: 31px;
+		}
+	}
+}

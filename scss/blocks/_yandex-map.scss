@@ -1,0 +1,13 @@
+[class*="copyrights-pane"] {
+    display: none !important;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+[class*="gototech"] {
+    display: none !important;
+}
+
+[class*="ground-pane"] {
+    filter: grayscale(30%) sepia(10%);
+}
